@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="450dp"
+    android:height="450dp"
+    android:viewportWidth="450"
+    android:viewportHeight="450">
+
+    <!-- Fond noir -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M225,225 m-225,0 a225,225 0 1,0 450,0 a225,225 0 1,0 -450,0" />
+
+    <!-- Arc batterie (gauche, cyan) — approximation statique 60% -->
+    <path
+        android:strokeColor="#FF1A2A3A"
+        android:strokeWidth="7"
+        android:fillColor="#00000000"
+        android:pathData="M116.8,381.6 A217,217 0 0,1 116.8,68.4" />
+    <path
+        android:strokeColor="#FF00E5FF"
+        android:strokeWidth="7"
+        android:fillColor="#00000000"
+        android:pathData="M116.8,381.6 A217,217 0 0,1 183.4,36.5" />
+
+    <!-- Arc pas (droite, vert) — approximation statique 40% -->
+    <path
+        android:strokeColor="#FF1A2A3A"
+        android:strokeWidth="7"
+        android:fillColor="#00000000"
+        android:pathData="M333.2,68.4 A217,217 0 0,1 333.2,381.6" />
+    <path
+        android:strokeColor="#FF81C784"
+        android:strokeWidth="7"
+        android:fillColor="#00000000"
+        android:pathData="M333.2,68.4 A217,217 0 0,1 390.1,270.0" />
+
+    <!-- Repère 12h -->
+    <path
+        android:fillColor="#FF607D8B"
+        android:pathData="M221,18 L229,18 L229,36 L221,36 Z" />
+
+    <!-- Aiguille des heures (10h) -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="8"
+        android:strokeLineCap="round"
+        android:pathData="M225,225 L191,143" />
+
+    <!-- Aiguille des minutes (8 min) -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M225,225 L225,80" />
+
+    <!-- Aiguille des secondes (32s) -->
+    <path
+        android:strokeColor="#FFFF5252"
+        android:strokeWidth="2"
+        android:pathData="M225,225 L259,87" />
+
+    <!-- Hub central blanc -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M225,225 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+    <!-- Hub central noir -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M225,225 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <!-- Hub central rouge -->
+    <path
+        android:fillColor="#FFFF5252"
+        android:pathData="M225,225 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+
+</vector>
