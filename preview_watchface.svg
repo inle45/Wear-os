@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450">
+  <defs>
+    <clipPath id="c"><circle cx="225" cy="225" r="225"/></clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#c)">
+    <!-- Fond noir -->
+    <circle cx="225" cy="225" r="225" fill="#000000"/>
+
+    <!-- Arc batterie — track -->
+    <path d="M 168.84,434.61 A 217,217 0 0,1 168.84,15.39" fill="none" stroke="#1A2A3A" stroke-width="7" stroke-linecap="round"/>
+    <!-- Arc batterie — fill 75 % -->
+    <path d="M 168.84,434.61 A 217,217 0 0,1 52.84,92.90" fill="none" stroke="#00E5FF" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+
+    <!-- Arc pas — track -->
+    <path d="M 281.16,15.39 A 217,217 0 0,1 281.16,434.61" fill="none" stroke="#1A2A3A" stroke-width="7" stroke-linecap="round"/>
+    <!-- Arc pas — fill 40 % -->
+    <path d="M 281.16,15.39 A 217,217 0 0,1 434.61,168.84" fill="none" stroke="#81C784" stroke-width="7" stroke-linecap="round" filter="url(#glow-green)"/>
+
+    <!-- Label batterie -->
+    <text x="48" y="230" text-anchor="middle" fill="#78909C" font-family="sans-serif" font-size="12">75%</text>
+    <!-- Label pas -->
+    <text x="400" y="230" text-anchor="middle" fill="#78909C" font-family="sans-serif" font-size="12">4000</text>
+
+    <!-- Repère 12h -->
+    <rect x="221" y="18" width="8" height="18" rx="2" fill="#607D8B" opacity="0.7"/>
+    <!-- Repère 6h -->
+    <rect x="221" y="414" width="8" height="18" rx="2" fill="#607D8B" opacity="0.7"/>
+
+    <!-- Aiguille heures -->
+    <line x1="225" y1="225" x2="142.10" y2="169.08" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <!-- Aiguille minutes -->
+    <line x1="225" y1="225" x2="332.76" y2="127.98" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <!-- Aiguille secondes — tige -->
+    <line x1="225" y1="225" x2="190.69" y2="386.39" stroke="#FF5252" stroke-width="2"/>
+    <!-- Aiguille secondes — contrepoids -->
+    <line x1="225" y1="225" x2="232.28" y2="190.76" stroke="#FF4444" stroke-width="2"/>
+
+    <!-- Hub central -->
+    <circle cx="225" cy="225" r="9"  fill="#FFFFFF"/>
+    <circle cx="225" cy="225" r="5"  fill="#000000"/>
+    <circle cx="225" cy="225" r="3"  fill="#FF5252"/>
+
+    <!-- Date -->
+    <text x="225" y="72" text-anchor="middle" fill="#B0BEC5" font-family="sans-serif" font-size="16">JEU 3 AVR</text>
+
+    <!-- Secondes numériques -->
+    <text x="225" y="275" text-anchor="middle" fill="#546E7A" font-family="sans-serif" font-size="14">32</text>
+  </g>
+</svg>
